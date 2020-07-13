@@ -1,0 +1,39 @@
+.container-table{
+    display: flex;
+}
+
+.first-column{
+    width: 600px;
+    background-color: #1e2939;
+
+    &__content{
+        padding: 20px;
+
+        color: #9DA4BD;;
+
+        & > h2{
+            margin-top: 7px;
+            margin-bottom: 7px;
+
+            text-align: center;
+            color: #fff;
+
+            &:first-child{
+                margin-top: 0px;
+            }
+        }
+    }
+}
+
+.second-column{
+    background-color: #9DA4BD;
+    color: #1e2939;
+    padding: 20px;
+    width: 100%;
+}
+
+.caption{
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}

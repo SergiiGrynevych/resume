@@ -1,74 +1,168 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/main.scss">
+    <link rel="stylesheet" href="./sass/main.css">
 </head>
 <body>
-    <header style="background-color: black;">
-        <nav>
-            
-            <ul>
-                <li>
-                    <p lang="en">Social links</p>
-                </li>
-                <li>
-                    <a href="/">
-                        <svg>
-                            <use href="./images/sprite.svg#facebook"></use>
-                        </svg>
-                        <p lang="en">Facebook</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="/">
-                        <svg>
-                            <use href="./images/sprite.svg#instagram"></use>
-                        </svg>
-                        
-                        <p lang="en">Instagram</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="/">
-                        <svg>
-                            <use href="./images/sprite.svg#instagram"></use>
-                        </svg>
-                        <p lang="en">Hobby-Instagram</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="/">
-                        <svg>
-                            <use href="./images/sprite.svg#instagram"></use>
-                        </svg>
-                        <p lang="en">Hobby-Instagram</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="/">
-                        <svg>
-                            <use href="./images/sprite.svg#youtube"></use>
-                        </svg>
-                        <p lang="en">Hobby-YouTube</p>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div class="bordered">
+        <header>
+            <div class="container">
+                <ul class="social-network">
+                    <li class="social-network__item">
+                        <p class="social-network__description">My social networks</p>
+                    </li>
+                    <li class="social-network__item">
+                        <a href="https://www.facebook.com/sergey.grinevich.58" class="social-network__link">
+                                <svg class="social-network__link_svg"> 
+                                    <use href="./images/sprite.svg#facebook"></use>
+                                </svg>
+                            <p class="social-network__link_definiiton">Facebook</p>
+                        </a>
+                    </li>
+                    <li class="social-network__item">
+                        <a href="https://www.instagram.com/kristian_law" class="social-network__link">
+                           
+                                <svg class="social-network__link_svg">
+                                    <use href="./images/sprite.svg#instagram"></use>
+                                </svg>
 
+                            <p class="social-network__link_definiiton">Instagram</p>
+                        </a>
+                    </li>
+                    <li class="social-network__item">
+                        <a href="https://www.instagram.com/bluescreen_pc/" class="social-network__link">
+                                <svg class="social-network__link_svg">
+                                    <use href="./images/sprite.svg#instagram"></use>
+                                </svg>
+                            <p class="social-network__link_definiiton">Hobby-Instagram</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    
+        <main>
+            <div class="container-table">
+                <div class="first-column">
+                    <img src="./images/me.jpg" alt="Фотография Сергея Гриневича" class="main-photo" class="main-photo">
+                    
+                    <div class="first-column__content">
+                        <h2>
+                            Contacts
+                        </h2>
+                        <ul class="contacts">
+                            <li class="contacts-item">
+                                <a href="tel:+380665479709" class="contacts-item__link">
+                                    <svg class="contacts-item__link-svg">
+                                        <use href="./images/sprite.svg#telephone"></use>
+                                    </svg>
+                                    +38 (066) 574-97-09
+                                </a>
+                            </li>
+                            <li class="contacts-item">
+                                <a href="mailto:grinevich.sergey.official@gmail.com" class="contacts-item__link">
+                                    <svg class="contacts-item__link-svg">
+                                  <use href="./images/sprite.svg#mail"></use>
+                                    </svg>
+                                    grinevich.sergey.official@gmail.com
+                                </a>
+                            </li>
+                        </ul>
+                        <h2>
+                            Tech skills:
+                        </h2>
+                        <table cellpadding="0" cellspacing="0" class="table-skills">
+                            <tr class="table-skills__line">
+                                <td>html5</td>
+                                <td>css3</td>
+                            </tr>
+                            <tr class="table-skills__line">
+                                <td>sass</td>
+                                <td>git</td>
+                            </tr>
+                            <tr class="table-skills__line">
+                                <td>animation</td>
+                                <td>svg-sprite</td>
+                            </tr>
+                            <tr class="table-skills__line">
+                                <td>support Retina display</td>
+                                <td>cross-browser layout</td>
+                            </tr>
+                            <tr class="table-skills__line">
+                                <td>adaptive and responsive layout</td>
+                                <td>page layout optimization by download speed</td>
+                            </tr>
+                        </table>
+                        <h2>
+                            Soft skills:
+                        </h2>
 
-    <main>
+                        <table cellpadding="0" cellspacing="0" class="table-skills">
+                            <tr class="table-skills__line">
+                                <td>Agile</td>
+                                <td>Team work with git</td>
+                            </tr>
+                        </table>
 
-    </main>
+                        <h2>
+                            I also know and use:
+                        </h2>
+                        <table cellpadding="0" cellspacing="0" class="table-skills">
+                            <tr class="table-skills__line">
+                                <td>Figma, Photoshop</td>
+                                <td>BEM</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
 
+                <div class="second-column">
+                    <h2 class="caption">Sergii Grynevych</h2>    
+                    <h1 class="caption">Front-end Developer</h1>
 
-    <footer>
+                    <div class="portfolio">
+                        <h2 class="portfolio-definition">My projects (links):</h2>
+                        <ul class="portfolio-description">
+                            <li class="portfolio-description__list">
+                                <a href="https://sergiigrynevych.github.io/goit-markup-hw-08/" class="portfolio-description__list-link">
+                                Web-Studio
+                                    <p class="portfolio-description__list-paragraph">I use all my stack in this project <br> (also base of JS for modal window)</p>
+                                </a>    
+                            </li>
+                            <li class="portfolio-description__list">
+                                <a href="https://sergiigrynevych.github.io/Blue_screen.PC/" class="portfolio-description__list-link">
+                                Blue screen pc
+                                    <p class="portfolio-description__list-paragraph">Web-site for my hobby project. This web site doesn't support adaptive and responsive layout. But in future i will add this.</p>
+                                </a>
+                            </li>
+                            <li class="portfolio-description__list">
+                                <a href="https://luno-front-end.github.io/top-8-devs/" class="portfolio-description__list-link">
+                                    Barbershop (team project)
+                                    <p class="portfolio-description__list-paragraph">This web-site we develop by team. Soon we will finish him (until the end of the week - 18.07.2020)</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-    </footer>
-
+                   
+                   
+                </div>
+            </div>
+    
+    
+    
+        </main>
+    
+    
+        <footer>
+    
+        </footer>
+    
+    </div>
+    
 </body>
 </html>
