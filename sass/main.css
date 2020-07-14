@@ -195,7 +195,7 @@ body {
 }
 
 .portfolio {
-  padding-top: 40px;
+  margin-top: 30px;
   text-align: center;
   width: 700px;
   margin-left: auto;
@@ -204,11 +204,12 @@ body {
 
 .portfolio-definition {
   text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .portfolio-description__list {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  margin-bottom: 30px;
   font-size: 30px;
 }
 
@@ -227,5 +228,21 @@ body {
 .portfolio-description__list-paragraph {
   text-transform: none;
   font-weight: 400;
+}
+
+.job {
+  margin: 0 auto;
+  padding: 15px 0;
+  width: 600px;
+  border: 1px solid whitesmoke;
+  -webkit-box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+
+.job-window {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  list-style: upper-alpha;
 }
 /*# sourceMappingURL=main.css.map */
